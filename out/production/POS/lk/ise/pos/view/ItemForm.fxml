@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ItemFormContext" prefHeight="641.0" prefWidth="1029.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ise.pos.Control.ItemFormController">
+   <children>
+      <Label layoutX="137.0" layoutY="44.0" prefHeight="44.0" prefWidth="177.0" text="Item Form">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onAction="#backToHomeOnAction" prefHeight="31.0" prefWidth="93.0" text="Back" />
+      <Button layoutX="798.0" layoutY="51.0" mnemonicParsing="false" onAction="#newItemOnAction" prefHeight="31.0" prefWidth="177.0" text="+new Item" />
+      <TextField fx:id="txtCode" layoutX="24.0" layoutY="182.0" prefHeight="31.0" prefWidth="140.0" promptText="code" />
+      <TextField fx:id="txtDescription" layoutX="201.0" layoutY="182.0" prefHeight="31.0" prefWidth="240.0" promptText="description" />
+      <TextField fx:id="txtQtyOnHand" layoutX="477.0" layoutY="182.0" prefHeight="31.0" prefWidth="276.0" promptText="QtyOnHand" />
+      <TextField fx:id="txtUnitPrice" layoutX="777.0" layoutY="182.0" prefHeight="31.0" prefWidth="220.0" promptText="unitPrice" />
+      <TextField layoutX="24.0" layoutY="247.0" prefHeight="31.0" prefWidth="710.0" promptText="search" />
+      <Button fx:id="btnSaveItem" layoutX="825.0" layoutY="247.0" mnemonicParsing="false" onAction="#saveItem" prefHeight="31.0" prefWidth="163.0" text="Save Item" />
+      <TableView fx:id="tbl" layoutX="24.0" layoutY="300.0" prefHeight="310.0" prefWidth="980.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="147.0" text="code" />
+          <TableColumn fx:id="colDescription" prefWidth="206.0" text="description" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="224.0" text="QtyOnHand" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="182.0" text="unitPrice" />
+            <TableColumn fx:id="colOptions" prefWidth="220.0" text="options" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

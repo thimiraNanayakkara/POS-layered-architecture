@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="651.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ise.pos.Control.OrderDetailsFormController">
+   <children>
+      <Label layoutX="27.0" layoutY="23.0" prefHeight="21.0" prefWidth="78.0" text="Order ID" />
+      <Label layoutX="318.0" layoutY="23.0" prefHeight="21.0" prefWidth="118.0" text="Customer Name" />
+      <Label layoutX="616.0" layoutY="23.0" prefHeight="21.0" prefWidth="78.0" text="Date" />
+      <Label layoutX="608.0" layoutY="509.0" prefHeight="21.0" prefWidth="78.0" text="Total Cost" />
+      <TextField fx:id="txtOrderId" layoutX="27.0" layoutY="62.0" />
+      <TextField fx:id="txtCustomerName" layoutX="318.0" layoutY="62.0" />
+      <TextField fx:id="txtDate" layoutX="616.0" layoutY="62.0" />
+      <TextField fx:id="txtTotalCost" layoutX="608.0" layoutY="539.0" />
+      <TableView fx:id="tblOrderDetails" layoutX="27.0" layoutY="139.0" prefHeight="356.0" prefWidth="778.0">
+        <columns>
+          <TableColumn fx:id="colItem" prefWidth="177.0" text="Item" />
+          <TableColumn fx:id="colDescription" prefWidth="213.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="191.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="196.0" text="Unit Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
